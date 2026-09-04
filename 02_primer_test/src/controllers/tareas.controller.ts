@@ -6,8 +6,8 @@ import { Request, Response } from 'express';
 // Por ahora, en lugar de usar una base de datos, guardamos las tareas en un arreglo
 // Tenemos un arreglo de objectos en donde cada objeto representa una tarea
 const tareas = [
-  { id: 1, titulo: "Estudiar pruebas", completada: false },  // Esta tarea está pendiente
-  { id: 2, titulo: "Hacer ejercicio", completada: true },    // Esta tarea ya está terminada
+  { id: 1, titulo: "Estudiar pruebas", completada: false, descripcion: "Estudiar pruebas unitarias usando Jest" },
+  { id: 2, titulo: "Hacer ejercicio", completada: true, descripcion: "Correr 30 minutos a 10km/h" },
 ];
 
 // Esta función se ejecuta cuando alguien hace una petición GET a nuestra API
